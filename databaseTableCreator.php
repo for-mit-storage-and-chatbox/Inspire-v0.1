@@ -45,6 +45,11 @@ CREATE TABLE `chat_login_details` (
 `is_typing` enum('no','yes') NOT NULL
 ) ENGINE=mySQL DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci; //Engine line not required if mySQL is default
 
+//Forgot to include the Primary Key ID to the table. LOL. Can be included in the top or just leave it!
+ALTER TABLE `chat_login_details`
+  ADD PRIMARY KEY (`id`);
+  
+
 
 //To make sure, the database was created successsfully and to check whether the PHP connection variable is able to connect to the database and its table
 if(mysqli_connect_errno()) 
