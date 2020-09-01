@@ -77,6 +77,5 @@ CREATE TABLE `chat_login_details` (
 
 -- Primary ID field for the table. Can be added in the top. Leave this if you dont mind. LOL
 ALTER TABLE `chat_login_details`
-  ADD PRIMARY KEY (`id`);
-  
+  ADD PRIMARY KEY (`id`); 
   
